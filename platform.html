@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<title>Jasmine Crockett for TX 30</title>
+
+
+	<style type="text/css">
+		.btn-primary {
+			background-color: red;
+			border-color: black;
+		}
+		.btn-primary:hover {
+			background-color: red;
+			border-color: black;
+			-moz-box-shadow: 0 0 5rem #ccc;
+			-webkit-box-shadow: 0 0 5rem #ccc;
+			box-shadow: 0 0 5rem #ccc;
+		}
+		.navbar-dark {
+			background-color: black !important;
+		}
+		.navbar-dark .navbar-nav .active,
+		.navbar-dark .navbar-nav .nav-link:hover {
+			color: red !important;
+		}
+		.navbar-dark .navbar-nav .nav-link {
+			color: white;
+		}
+
+		.mobile-nav-item {
+			width: 100%;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			padding-left: 1em;
+			text-decoration-color: red;
+		}
+		.mobile-nav-item:hover {
+			background-color: black;
+			text-decoration-color: red;
+		}
+		a .mobile-nav-item {
+			color: black;
+			font-size: 1.5em;
+			text-decoration-color: red;
+		}
+		a .mobile-nav-item:hover {
+			color: red !important;
+			text-decoration-color: red;
+		}
+		#active-mobile {
+			background-color: black;
+			color: red !important;
+		}
+
+		h2 {
+			color: red;
+		}
+
+		.card-header {
+			background-color: black;
+		}
+		.btn-txt {
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="d-flex justify-content-around flex-wrap" style="padding-left: 5%; padding-right: 5%; align-items: center; background-color: red;">
+		<a href=""><img src="http://assets.stickpng.com/thumbs/5a2fe3efcc45e43754640848.png" class="img-fluid rounded-circle" style="max-width: 25px; margin-top: 0.25em; margin-bottom: 0.25em;"></a>
+		<a href=""><img src="https://i.pinimg.com/originals/f9/52/47/f95247af33c20a2b1e693dd1054751c7.png" class="img-fluid rounded-circle" style="max-width: 25px; margin-top: 0.25em; margin-bottom: 0.25em;"></a>
+		<a href=""><img src="https://toppng.com/uploads/preview/instagram-logo-circle-11549679754rhbcorxntv.png" class="img-fluid rounded-circle" style="max-width: 25px; margin-top: 0.25em; margin-bottom: 0.25em;"></a>
+		<a href=""><img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" class="img-fluid rounded-circle" style="max-width: 25px; margin-top: 0.25em; margin-bottom: 0.25em;"></a>
+		<div class="d-flex justify-content-center"><a href="#" class="btn btn-primary" style="flex-basis: 50px; border-radius: 0.9em;  margin-top: 0.25em; margin-bottom: 0.25em;">Donate</a></div>
+	</div>
+	<div class="container-fluid" id="mobile-logo" style="background-color: black;" class="d-md-none">
+		<center><img src="media/logo.png" class="img img-fluid d-md-none" height="20%;"></center>
+	</div>
+	<div class="container-fluid d-md-none" id="mobile-navbar">
+		<a href="" class="d-md-none"><div class="mobile-nav-item">
+			Meet Jasmine
+		</div></a>
+		<a href=""><div class="mobile-nav-item" id="active-mobile">
+			Platform
+		</div></a>
+		<a href=""><div class="mobile-nav-item">
+			TX-30
+		</div></a>
+		<a href=""><div class="mobile-nav-item">
+			Endorsements
+		</div></a>
+		<a href=""><div class="mobile-nav-item">
+			Media
+		</div></a>
+		<a href=""><div class="mobile-nav-item">
+			Get Involved
+		</div></a>
+	</div>
+	<div class="container-fluid d-none d-md-block" id="desktop-navbar" style="background-color: black;">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark" style="background-color: black;">
+  			<a class="navbar-brand" href="#"><img src="https://www.jasminefor100.com/wp-content/uploads/2019/10/Header.png" style="height: 3rem;"></a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+   	 			<div class="navbar-nav flex-wrap">
+      				<a class="nav-item nav-link" href="#">Meet Jasmine</a>
+     				<a class="nav-item nav-link active" href="#">Platform</a>
+     				<a class="nav-item nav-link" href="#">TX-30</a>
+     				<a class="nav-item nav-link" href="#">Endorsements</a>
+     				<a class="nav-item nav-link" href="#">Media</a>
+     				<a class="nav-item nav-link" href="#">Get Involved</a>
+    			</div>
+  			</div>
+		</nav>		
+	</div>
+	<div class="container-fluid" id="platform">
+		<div class="accordion" id="accordionExample">
+		  <div class="card">
+		    <div class="card-header" id="headingOne">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="word-wrap: break-word; white-space: normal;">
+		          <!-- <img src="http://assets.stickpng.com/thumbs/5a2fe3efcc45e43754640848.png" class="img-fluid rounded-circle" style="max-width: 50px; margin-top: 0.25em; margin-bottom: 0.25em;"> -->
+				<h2>Issue Area</h2>
+				<span class="btn-txt">We must do something about this issue. Demonstrate why this issue is so bad. Detail what actions Jasmine has taken on this issue before. State boldly what more must be done. More details on the issue area by clicking here.</span>
+		        </button>
+		      </h2>
+		    </div>
+
+		    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel nibh euismod, ornare mi sit amet, bibendum nisl. Praesent pharetra porttitor eros id varius. Nullam imperdiet, tellus nec fermentum consectetur, sapien diam molestie tortor, ut auctor odio massa quis justo. Fusce massa ante, euismod ac malesuada et, convallis vel lorem. Integer ut pretium ipsum. Vestibulum vehicula a leo ut ultrices. Morbi posuere vulputate gravida. Nam eu hendrerit ante. Suspendisse ac bibendum elit, quis viverra nunc. Mauris tristique et elit ac rutrum. Maecenas ullamcorper tellus a risus efficitur eleifend. Maecenas justo eros, pulvinar a facilisis eget, ultricies finibus nisi. Suspendisse felis mi, tempus vitae volutpat nec, suscipit eget nunc. Donec molestie, magna non venenatis porttitor, justo libero consequat nulla, ac interdum libero enim et mauris.
+
+					Nam hendrerit feugiat orci. Nulla tristique nunc neque. Sed faucibus lectus vitae mauris condimentum, quis dapibus purus faucibus. Praesent eget mi tincidunt, malesuada justo sit amet, posuere tellus. Aliquam ultricies mauris a nisl scelerisque, vitae semper massa hendrerit. Mauris venenatis at enim id semper. Fusce rhoncus aliquet ipsum in mattis. Mauris venenatis lacus non ligula porttitor lobortis. Nunc cursus, enim tincidunt ornare fringilla, dolor enim iaculis dolor, cursus fringilla lacus diam id neque. In nisl dolor, mattis id volutpat nec, ultrices sed leo. Nullam ac ligula ac elit fringilla mattis sit amet vitae erat. Fusce scelerisque mi at sem posuere vehicula. Suspendisse laoreet id nisi non ultrices. Duis non tincidunt ligula. Sed non imperdiet lacus. Nunc faucibus, libero vitae volutpat molestie, erat massa tristique nisi, in pellentesque tortor purus id lacus.
+				</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingTwo">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="word-wrap: break-word; white-space: normal;">
+		          <!-- <img src="http://assets.stickpng.com/thumbs/5a2fe3efcc45e43754640848.png" class="img-fluid rounded-circle" style="max-width: 50px; margin-top: 0.25em; margin-bottom: 0.25em;"> -->
+				<h2>Issue Area</h2>
+				<span class="btn-txt">We must do something about this issue. Demonstrate why this issue is so bad. Detail what actions Jasmine has taken on this issue before. State boldly what more must be done. More details on the issue area by clicking here.</span>
+		        </button>
+		      </h2>
+		    </div>
+		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel nibh euismod, ornare mi sit amet, bibendum nisl. Praesent pharetra porttitor eros id varius. Nullam imperdiet, tellus nec fermentum consectetur, sapien diam molestie tortor, ut auctor odio massa quis justo. Fusce massa ante, euismod ac malesuada et, convallis vel lorem. Integer ut pretium ipsum. Vestibulum vehicula a leo ut ultrices. Morbi posuere vulputate gravida. Nam eu hendrerit ante. Suspendisse ac bibendum elit, quis viverra nunc. Mauris tristique et elit ac rutrum. Maecenas ullamcorper tellus a risus efficitur eleifend. Maecenas justo eros, pulvinar a facilisis eget, ultricies finibus nisi. Suspendisse felis mi, tempus vitae volutpat nec, suscipit eget nunc. Donec molestie, magna non venenatis porttitor, justo libero consequat nulla, ac interdum libero enim et mauris.
+
+					Nam hendrerit feugiat orci. Nulla tristique nunc neque. Sed faucibus lectus vitae mauris condimentum, quis dapibus purus faucibus. Praesent eget mi tincidunt, malesuada justo sit amet, posuere tellus. Aliquam ultricies mauris a nisl scelerisque, vitae semper massa hendrerit. Mauris venenatis at enim id semper. Fusce rhoncus aliquet ipsum in mattis. Mauris venenatis lacus non ligula porttitor lobortis. Nunc cursus, enim tincidunt ornare fringilla, dolor enim iaculis dolor, cursus fringilla lacus diam id neque. In nisl dolor, mattis id volutpat nec, ultrices sed leo. Nullam ac ligula ac elit fringilla mattis sit amet vitae erat. Fusce scelerisque mi at sem posuere vehicula. Suspendisse laoreet id nisi non ultrices. Duis non tincidunt ligula. Sed non imperdiet lacus. Nunc faucibus, libero vitae volutpat molestie, erat massa tristique nisi, in pellentesque tortor purus id lacus.
+				</p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <div class="card-header" id="headingThree">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="word-wrap: break-word; white-space: normal;">
+		          <!-- <img src="http://assets.stickpng.com/thumbs/5a2fe3efcc45e43754640848.png" class="img-fluid rounded-circle" style="max-width: 50px; margin-top: 0.25em; margin-bottom: 0.25em;"> -->
+				<h2>Issue Area</h2>
+				<span class="btn-txt">We must do something about this issue. Demonstrate why this issue is so bad. Detail what actions Jasmine has taken on this issue before. State boldly what more must be done. More details on the issue area by clicking here.</span>
+		        </button>
+		      </h2>
+		    </div>
+		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+		      <div class="card-body">
+		        <p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel nibh euismod, ornare mi sit amet, bibendum nisl. Praesent pharetra porttitor eros id varius. Nullam imperdiet, tellus nec fermentum consectetur, sapien diam molestie tortor, ut auctor odio massa quis justo. Fusce massa ante, euismod ac malesuada et, convallis vel lorem. Integer ut pretium ipsum. Vestibulum vehicula a leo ut ultrices. Morbi posuere vulputate gravida. Nam eu hendrerit ante. Suspendisse ac bibendum elit, quis viverra nunc. Mauris tristique et elit ac rutrum. Maecenas ullamcorper tellus a risus efficitur eleifend. Maecenas justo eros, pulvinar a facilisis eget, ultricies finibus nisi. Suspendisse felis mi, tempus vitae volutpat nec, suscipit eget nunc. Donec molestie, magna non venenatis porttitor, justo libero consequat nulla, ac interdum libero enim et mauris.
+
+					Nam hendrerit feugiat orci. Nulla tristique nunc neque. Sed faucibus lectus vitae mauris condimentum, quis dapibus purus faucibus. Praesent eget mi tincidunt, malesuada justo sit amet, posuere tellus. Aliquam ultricies mauris a nisl scelerisque, vitae semper massa hendrerit. Mauris venenatis at enim id semper. Fusce rhoncus aliquet ipsum in mattis. Mauris venenatis lacus non ligula porttitor lobortis. Nunc cursus, enim tincidunt ornare fringilla, dolor enim iaculis dolor, cursus fringilla lacus diam id neque. In nisl dolor, mattis id volutpat nec, ultrices sed leo. Nullam ac ligula ac elit fringilla mattis sit amet vitae erat. Fusce scelerisque mi at sem posuere vehicula. Suspendisse laoreet id nisi non ultrices. Duis non tincidunt ligula. Sed non imperdiet lacus. Nunc faucibus, libero vitae volutpat molestie, erat massa tristique nisi, in pellentesque tortor purus id lacus.
+				</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<footer style="margin-top: 2rem;background-color: black;margin-bottom: 0px; padding-bottom: 0px;">
+		<center><h5 style="color: white; margin-bottom: 0px;">Political ad. paid for by Jasmine Crockett Campaign</h5></center>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
